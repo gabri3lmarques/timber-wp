@@ -76,3 +76,33 @@ $purple_products = Timber::get_posts($filtered_purple_products);
 //give all posts a 'color_name' property with the filtered color
 $context['purple_products'] = ContextHelper::get_color_names($purple_products);
 ```
+
+# Urls
+
+### /products
+
+returns all products
+
+### /products/product-url
+
+Return a product with no color
+
+### /products/color/purple/
+
+Returns all products of the color purple
+
+### /products/color/purple/product-url
+
+Returns a product that has color taxonomy = “purple”
+
+### /color/purple
+
+Returns all products and posts the same color
+
+### /color/purple/post-url
+
+Returns a post with “purple” color taxonomy
+
+### /post-url
+
+Returns a post with no color
