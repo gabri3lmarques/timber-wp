@@ -1,0 +1,21 @@
+{% extends "base.twig" %}
+
+{% block content %}
+    <div class="content-wrapper container">
+        <article class="post-type-{{ post.type }}" id="post-{{ post.id }}">
+
+            <div style="background-image: url({{post.thumbnail.src }});height: 300px;background-posiyion:center">
+            </div>
+            <section class="article-content">
+                <h1 class="article-h1">{{ post.title }}</h1>
+                <p class="blog-author">
+                    <span>By</span>
+                    {{ post.author.name }}
+                    <span>&bull;</span>
+                    <time datetime="{{ post.date|date('Y-m-d H:i:s') }}">{{ post.date }}</time>
+                </p>
+                <div class="article-body">{{ post.content }}</div>
+            </section>
+        </article>
+    </div>
+{% endblock %}

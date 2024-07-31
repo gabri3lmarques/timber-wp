@@ -1,0 +1,16 @@
+.hero {
+    background-image: linear-gradient(to right, #eabc65 , #b19bb3, #869c82);
+
+    h3 {
+        color: #fff;
+        text-shadow: 
+        -2px -2px 0 #bb9651, /* top-left */
+        2px -2px 0 #bb9651, /* top-right */
+       -2px  2px 0 #bb9651, /* bottom-left */
+        2px  2px 0 #bb9651, /* bottom-right */
+       -2px  0px 0 #bb9651, /* left */
+        2px  0px 0 #bb9651, /* right */
+        0px -2px 0 #bb9651, /* top */
+        0px  2px 0 #bb9651; /* bottom */
+    }
+}

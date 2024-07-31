@@ -1,0 +1,39 @@
+.card {
+
+    &.card-yellow {
+        border: 1px solid #bb9651; // 10% black
+    }
+
+    &.card-purple {
+        border: 1px solid #8e7c8f;
+    }
+
+    &.card-green {
+        border: 1px solid #6b7d68; // 10% black
+    }
+
+    .horizontal-card {
+        strong {
+            display: inline-block;
+            border-radius: 2px;
+            padding: 0 10px;
+            color: #fff;
+    
+            &.yellow {
+                background-color: #eabc65;
+                border: 2px dashed #bb9651; // 10% black
+            }
+    
+            &.purple {
+                background-color: #b19bb3;
+                border: 2px dashed #8e7c8f;
+            }
+    
+            &.green {
+                background-color: #869c82;
+                border: 2px dashed #6b7d68; // 10% black
+            }
+        }
+    }
+    
+}

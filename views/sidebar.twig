@@ -1,0 +1,22 @@
+<div class="d-flex flex-column flex-shrink-0 p-4 card">
+    <h4>Thinking in a different color?</h4>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+      {% for product in yellow_products %}
+        {# {% include "horizontal-card.twig" %} #}
+          {% include "horizontal-product.twig" %}
+      {% endfor %}
+    </ul>
+    <ul class="nav nav-pills flex-column mb-auto">
+      {% for product in green_products %}
+        {# {% include "horizontal-card.twig" %} #}
+          {% include "horizontal-product.twig" %}
+      {% endfor %}
+    </ul>
+    <ul class="nav nav-pills flex-column mb-auto">
+      {% for product in purple_products %}
+        {# {% include "horizontal-card.twig" %} #}
+          {% include "horizontal-product.twig" %}
+      {% endfor %}
+    </ul>
+  </div>

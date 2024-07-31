@@ -1,0 +1,11 @@
+
+{% block content %}
+<div class="grid-item post-card card">
+  <img src={{post.thumbnail.src}} class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="card-text">
+        <p>{{ post.excerpt({ words:5, read_more: "Keep reading" }) }}</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

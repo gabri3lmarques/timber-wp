@@ -1,0 +1,17 @@
+{% block content %}
+
+<div class="grid-item product-card card">
+  <img src="{{product.thumbnail.src}}" class="card-img-top" alt="{{ product.thumbnail.alt }}">
+  <div class="card-body">
+    <h5 class="card-title">{{product.title}}</h5>
+    {% if product.meta('product_pice') %}
+      <p class="card-text">
+        C$ {{product.meta('product_pice')}}
+      </p>
+    {% endif %}
+    <a href="{{product.link}}" class="btn btn-primary cta-{{product.color_name}}">see more</a>
+  </div>
+</div>
+
+{% endblock %}
+

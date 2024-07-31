@@ -1,0 +1,16 @@
+<div class="card p-4">
+    <img style="max-width: 100%;" src="{{ post.thumbnail.src }}">							
+</div>
+<h3 class="product-title">{{post.title}}</h3>
+<div class="product-colors">
+    <div class="circle-color {{color_name}}">
+    </div>
+    <div class="circle-color">
+    </div>
+    <div class="circle-color">
+    </div>
+</div>
+<p class="product-price">C${{post.meta('product_pice')}}</p>
+<div class="article-body">
+{{post.content}}
+</div>

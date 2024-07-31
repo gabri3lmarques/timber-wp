@@ -1,0 +1,15 @@
+@import './front-page';
+@import './menu';
+@import './product-card';
+@import './hero';
+@import './horizontal-card';
+@import './single-product';
+@import './horizontal-product';
+
+* {
+    box-sizing: border-box;
+}
+
+.content-wrapper {
+    margin-top: 40px;
+}

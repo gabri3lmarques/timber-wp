@@ -1,0 +1,17 @@
+<li class="horizontal-product ">
+    <a href={{product.link}}>
+        <div class="card mb-3 card-{{product.color_name}}">
+            <div class="row align-items-center g-0">
+                <div class="col-5">
+                    <img src={{product.thumbnail.src}} class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-6 d-flex justify-content-center">
+        			<p>
+                    <span style="font-size:12px">Maybe {{product.color_name}}? </span> <br>
+                    <span style="font-size:14px">by <strong>C${{product.meta('product_pice')}}</strong></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </a>
+</li>

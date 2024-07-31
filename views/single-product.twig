@@ -1,0 +1,50 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div class="content-wrapper container">
+		<article class="single-product">
+			<section class="article-content">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-7 col-12">
+					   		{% include "single-product-card.twig" with { post: post} %}
+						</div>
+						{# /col #}
+						<div class="col-3 sidebar-col">
+    						{% include "sidebar.twig"  with { yellow_products: yellow_products, green_products: green_products, purple_products: purple_products } %}						
+						</div>
+						{# /col #}
+					</div>
+
+					
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-lg-10 col-12">
+								<h5>More the same color?</h5>
+								<div class="grid">
+									{% for product in same_color_products %}
+										{% include "product-card.twig" with { product: product} %}
+									{% endfor %}	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</article>
+	</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

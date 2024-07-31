@@ -1,0 +1,23 @@
+.horizontal-product {
+
+    .card {
+
+        &.card-yellow {
+            &:hover {
+                background-color: #eabc65;
+            }
+        }
+
+        &.card-green {
+            &:hover {
+                background-color: #869c82;
+            }
+        }
+
+        &.card-purple {
+            &:hover {
+                background-color: #b19bb3;
+            }
+        }
+    }
+}

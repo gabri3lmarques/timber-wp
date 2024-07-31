@@ -1,0 +1,30 @@
+.product-card {
+    .cta-yellow {
+        background-color: #eabc65;
+        border: 2px solid #bb9651; // 10% black
+
+        &:hover {
+            background-color: #bb9651; // 10% black
+        }
+    }
+
+    .cta-purple {
+        background-color: #b19bb3;
+        border: 2px solid #8e7c8f; // 10% black
+
+        &:hover {
+            background-color: #8e7c8f; // 10% black
+        }
+    }
+
+    .cta-green {
+        background-color: #869c82;
+        border: 2px solid #6b7d68; // 10% black
+
+        &:hover {
+            background-color: #6b7d68; // 10% black
+        }
+    }
+
+}
+

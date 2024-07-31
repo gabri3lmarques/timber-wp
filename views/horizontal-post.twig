@@ -1,0 +1,16 @@
+<div class="card mb-3 card-{{post.color_name}}">
+    <div class="row g-0">
+        <div class="col-md-2 col-sm-4">
+            <img src={{post.thumbnail.src}} class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-10 col-sm-8">
+            <div class="card-body horizontal-card ">
+                <h5 class="card-title"><a href={{post.link}}>{{post.title}}</a></h5>
+                <p class="card-text">{{ post.excerpt({ words: 40, read_more: "Keep reading" }) }}</p>
+                <p class="card-text">
+                     <strong class="{{post.color_name}}">{{post.color_name}}</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
